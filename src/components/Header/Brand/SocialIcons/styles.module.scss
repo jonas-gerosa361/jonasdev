@@ -1,12 +1,7 @@
 .SocialIcons {
   a {
-    img {
-      margin-right: .5rem;
-      background-color: var(--text-main);
-
-      &:focus {
-        background-color: red;
-      }
-    }
+    margin-right: .5rem;
+    background-color: var(--text-main);
+    padding-top: .25rem;
   }
 }
