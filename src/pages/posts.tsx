@@ -22,9 +22,7 @@ export default function Posts({articles}: PostsProps) {
 }
 
 export const getStaticProps: GetStaticProps = async() => {
-  const endpoint = process.env.blog_endpoint;
-  const username = process.env.blog_username;
-  const articles = await fetch(`${endpoint}/articles?username=${username}`)
+  const articles = await fetch('https://dev.to/api/articles?username=jonasgerosa')
     .then(response => response.json())
     .then(response => response);
   return {
