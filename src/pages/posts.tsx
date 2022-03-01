@@ -1,15 +1,36 @@
 import Head from "next/head";
-import { Header } from "../components/Header";
-import UnderConstruction from "../components/UnderConstruction";
+import {GetStaticProps} from 'next';
 
-export default function Posts() {
+import { Header } from "../components/Header";
+import BlogPosts from "../components/BlogPosts";
+
+interface PostsProps {
+  articles: []
+}
+
+export default function Posts({articles}: PostsProps) {
   return (
     <>
       <Head>
         <title>Posts | JonasDEV</title>
       </Head>
       <Header />
-      <UnderConstruction />
+
+      <BlogPosts posts={articles} />
     </>
   );
+}
+
+export const getStaticProps: GetStaticProps = async() => {
+  const endpoint = process.env.blog_endpoint;
+  const username = process.env.blog_username;
+  const articles = await fetch(`${endpoint}/articles?username=${username}`)
+    .then(response => response.json())
+    .then(response => response);
+  return {
+    props: {
+      articles: articles
+    },
+    revalidate: 60 * 60 * 24 // 24 hours
+  }
 }
