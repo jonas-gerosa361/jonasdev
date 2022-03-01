@@ -4,11 +4,11 @@
 }
 
 .headerContent {
+  display: flex;
+  align-items: center;
   width: 90%;
   margin: 0 auto;
   padding: 1rem 0;
-  display: flex;
-  align-items: center;
 
   @media (max-width: 720px) {
   h1 {
@@ -19,8 +19,8 @@
   nav {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
     height: 3rem;
     margin-left: auto;
 

@@ -1,12 +1,16 @@
 .HomeIntroductionContainer {
-  width: 90%;
-  margin: 1rem auto 0;
   display: flex;
   align-items: center;
+  width: 60%;
+  margin: 1rem auto 0;
+
+  @media (max-width: 720px) {
+    flex-direction: column;
+  }
 
   img {
-    height: 300px;
-    border-radius: 5%;
+    height: 200px;
     margin-right: 1rem;
+    border-radius: 5%;
   }
 }

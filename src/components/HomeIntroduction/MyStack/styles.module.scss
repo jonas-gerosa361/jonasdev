@@ -1,0 +1,150 @@
+.MyStackContainer {
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
+
+  h2 {
+    margin: .5rem;
+  }
+
+  ul {
+    list-style: none;
+
+    li {
+      display: flex;
+      justify-content: flex-start;
+      margin-bottom: .5rem;
+      border-radius: 1rem;
+      background-color: #262627;
+
+      span {
+        padding: .25rem 0;
+        border-radius: 1rem;
+      }
+
+      &:hover {
+        filter: brightness(0.8);
+      }
+    }
+  }
+
+  .html {
+    width: 85%;
+    background-color: #DD4B25;
+    color: #F7F7F7;
+  }
+
+  .css {
+    width: 85%;
+    background-color: #264DE5;
+    color: #FFFFFF;
+  }
+
+  .sass {
+    width: 85%;
+    background-color: #C86494;
+    color: #F7F7F7;
+  }
+
+  .accessibility {
+    width: 70%;
+    background-color: #0076F8;
+    color: #F7F7F7;
+  }
+
+  .php {
+    width: 85%;
+    background-color: #5664A3;
+    color: #dee7ff;
+  }
+
+  .javascript {
+    width: 85%;
+    background-color: #EFD81D;
+    color: #000000;
+  }
+
+  .laravel {
+    width: 80%;
+    background-color: #F72C1F;
+    color: #F7F7F7;
+  }
+
+  .react {
+    width: 70%;
+    background-color: #62DFF7;
+    color: #212121;
+  }
+
+  .linux {
+    width: 90%;
+    background-color: #2F042F;
+    color: #FFF;
+  }
+
+  .shell {
+    width: 90%;
+    background-color: #000;
+    color: #FFF;
+  }
+
+  .nginx {
+    width: 70%;
+    background-color: #009137;
+    color: #F7F7F7;
+  }
+
+  .apache {
+    width: 60%;
+    background-color: #CB2136;
+    color: #ffe2e0;
+  }
+
+  .redis {
+    width: 60%;
+    background-color: #D12B1F;
+    color: #F7F7F7;
+  }
+
+  .mysql {
+    width: 80%;
+    background-color: #42759C;
+    color: #E8EBEE;
+  }
+
+  .oracle {
+    width: 50%;
+    background-color: #DC2023;
+    color: #F6F6F6;
+  }
+
+  .mongodb {
+    width: 50%;
+    background-color: #439743;
+    color: #002400;
+  }
+
+  .drupal {
+    width: 60%;
+    background-color: #026FB4;
+    color: #F7F7F7;
+  }
+
+  .node {
+    width: 40%;
+    background-color: #6FA660;
+    color: #313131;
+  }
+
+  .typescript {
+    width: 50%;
+    background-color: #2F74C0;
+    color: #F7F7F7;
+  }
+
+  .electron {
+    width: 40%;
+    background-color: #9AE3F1;
+    color: #2A2D38;
+  }
+}
