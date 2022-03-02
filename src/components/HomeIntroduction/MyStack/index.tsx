@@ -30,19 +30,13 @@ export function MyStack() {
           <span className={styles.javascript}>JavaScript</span>
         </li>
         <li>
-          <span className={styles.node}>
-            NodeJS
-          </span>
+          <span className={styles.node}>NodeJS</span>
         </li>
         <li>
-          <span className={styles.typescript}>
-            TypeScript
-          </span>
+          <span className={styles.typescript}>TypeScript</span>
         </li>
         <li>
-          <span className={styles.electron}>
-            ElectronJS
-          </span>
+          <span className={styles.electron}>ElectronJS</span>
         </li>
         <li>
           <span className={styles.react}>React</span>
