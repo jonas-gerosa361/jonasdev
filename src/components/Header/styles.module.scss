@@ -1,6 +1,18 @@
 .headerContainer {
   width: 100%;
-  border-bottom: 2px solid #4a4c4f;
+  border-bottom: 1px solid #bfc0c4;
+  background-color: var(--bg-main);
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+
+  @media (max-width: 720px) {
+    height: 4rem;
+  }
+
+  @media (min-width: 720px) {
+    height: 5rem;
+  }
 }
 
 .headerContent {
