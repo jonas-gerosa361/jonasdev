@@ -8,7 +8,6 @@ export default function Projects() {
       <Head>
         <title>Projects | JonasDEV</title>
       </Head>
-      <Header />
       <UnderConstruction />
     </>
   )

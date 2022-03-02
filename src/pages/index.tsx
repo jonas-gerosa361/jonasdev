@@ -8,7 +8,6 @@ export default function Home() {
       <Head>
         <title>Home | JonasDEV</title>
       </Head>
-      <Header />
       <HomeIntroduction />
     </>
   )

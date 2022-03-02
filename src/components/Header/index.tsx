@@ -14,9 +14,9 @@ export function Header() {
           <Link href='/posts'>
             Posts
           </Link>
-          <Link href='/projects'>
+          {/* <Link href='/projects'>
             Projects
-          </Link>
+          </Link> */}
         </nav>
       </div>
     </header>

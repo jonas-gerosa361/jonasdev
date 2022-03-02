@@ -14,7 +14,6 @@ export default function Posts({articles}: PostsProps) {
       <Head>
         <title>Posts | JonasDEV</title>
       </Head>
-      <Header />
 
       <BlogPosts posts={articles} />
     </>
