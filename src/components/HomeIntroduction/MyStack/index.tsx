@@ -3,7 +3,7 @@ import styles from './styles.module.scss';
 export function MyStack() {
   return (
     <div className={styles.MyStackContainer}>
-      <h2>My stack</h2>
+      <h2>My Stack</h2>
       <ul>
         <li>
           <span className={styles.html}>HTML5</span>

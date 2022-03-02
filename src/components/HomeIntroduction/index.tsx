@@ -13,10 +13,10 @@ export default function HomeIntroduction() {
           height='200'
         />
         <div className={styles.TextIntroduction}>
-          <p>Hey👋! Welcome to my blog! Here I&apos;ll be writing about web development in general</p>
-          <p>I am Jonas and I&apos;m blessed to be married with a great woman and having an amazing son.</p>
-          <p>After 7 years working with IT and already had worked as a support analyst, support coordinator and infrastructure analyst,
-            I finally discovered myself as a developer&nbsp;:)</p>
+          <p>Hi! Welcome to my blog!👋 Here I&apos;ll be writing about my experience with web development.</p>
+          <p>I am Jonas, and I&apos;m blessed to be married to a great woman and have an amazing son.</p>
+          <p>After seven years working with IT and already had worked as a support analyst, support coordinator,
+            and infrastructure analyst, I finally discovered myself as a developer&nbsp;:)</p>
         </div>
       </div>
       <MyStack />
