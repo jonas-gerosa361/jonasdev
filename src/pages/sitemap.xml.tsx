@@ -8,7 +8,7 @@ export const getServerSideProps: GetServerSideProps = async ({ res }) => {
   const BASE_URL = 'https://jonasdev.com.br';
   const allPaths = [
     `${BASE_URL}/`,
-    `${BASE_URL}/products`
+    `${BASE_URL}/posts`
   ];
 
   const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
