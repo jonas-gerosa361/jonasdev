@@ -6,6 +6,7 @@ export default function Home() {
   return (
     <>
       <Head>
+        <meta name="robots" content="index" />
         <title>Home | JonasDEV</title>
       </Head>
       <HomeIntroduction />
