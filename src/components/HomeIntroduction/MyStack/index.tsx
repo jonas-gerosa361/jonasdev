@@ -2,7 +2,7 @@ import styles from './styles.module.scss';
 
 export function MyStack() {
   return (
-    <div className={styles.MyStackContainer}>
+    <div aria-hidden="true" className={styles.MyStackContainer}>
       <h2>My Stack</h2>
       <ul>
         <li>
