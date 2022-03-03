@@ -7,6 +7,7 @@ export default function Home() {
     <>
       <Head>
         <meta name="robots" content="index" />
+        <meta name="google-site-verification" content="-9kCJtUqPJML-3V3k0WeHSaBUQ6LMVuHhj2lhuJqukQ" />
         <title>Home | JonasDEV</title>
       </Head>
       <HomeIntroduction />
