@@ -18,6 +18,21 @@ export function MyStack() {
           <span className={styles.accessibility}>Acessibility</span>
         </li>
         <li>
+          <span className={styles.javascript}>JavaScript</span>
+        </li>
+        <li>
+          <span className={styles.typescript}>TypeScript</span>
+        </li>
+        <li>
+          <span className={styles.node}>NodeJS</span>
+        </li>
+        <li>
+          <span className={styles.react}>React</span>
+        </li>
+        <li>
+          <span className={styles.electron}>ElectronJS</span>
+        </li>
+        <li>
           <span className={styles.php}>PHP</span>
         </li>
         <li>
@@ -25,21 +40,6 @@ export function MyStack() {
         </li>
         <li>
           <span className={styles.laravel}>Laravel</span>
-        </li>
-        <li>
-          <span className={styles.javascript}>JavaScript</span>
-        </li>
-        <li>
-          <span className={styles.node}>NodeJS</span>
-        </li>
-        <li>
-          <span className={styles.typescript}>TypeScript</span>
-        </li>
-        <li>
-          <span className={styles.electron}>ElectronJS</span>
-        </li>
-        <li>
-          <span className={styles.react}>React</span>
         </li>
         <li>
           <span className={styles.linux}>Linux</span>
