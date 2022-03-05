@@ -28,7 +28,7 @@ export default function BlogPosts() {
                     tags: {post.tags}
                   </span>
                   <p>Description: {post.description}</p>
-                  <p>Reading time: {post.readingTime} minutes</p>
+                  <p>Reading time: {post.readingTime}</p>
                 </div>
               </Link>
             </li>
