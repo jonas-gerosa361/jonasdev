@@ -2,4 +2,4 @@ User-agent: *
 Allow: /*
 Disallow: /api/*
 
-Sitemap: https://jonasdev.com.br/sitemap
+Sitemap: https://jonasdev.com.br/sitemap.xml
