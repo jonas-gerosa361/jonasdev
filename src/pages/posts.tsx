@@ -1,21 +1,15 @@
 import Head from "next/head";
 import {GetStaticProps} from 'next';
-
-import { Header } from "../components/Header";
 import BlogPosts from "../components/BlogPosts";
 
-interface PostsProps {
-  articles: []
-}
-
-export default function Posts({articles}: PostsProps) {
+export default function Posts() {
   return (
     <>
       <Head>
         <title>Posts | JonasDEV</title>
       </Head>
 
-      <BlogPosts posts={articles} />
+      <BlogPosts />
     </>
   );
 }

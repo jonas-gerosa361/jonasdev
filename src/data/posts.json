@@ -1,0 +1,18 @@
+[
+  {
+    "id": 2,
+    "title": "Squashing Commits",
+    "description": "Why to squash commits? In this article, we will cover how to squash commit but before that...",
+    "tags": "#git, #github",
+    "url": "/posts/squashing-commits",
+    "readingTime": "2 minutes read"
+  },
+  {
+    "id": 1,
+    "title": "Github: Using multiple deploy keys",
+    "description": "This tutorial will cover how to use multiple deploy keys with Github on a Linux/Mac System...",
+    "tags": "#git, #github",
+    "url": "/posts/github-multiple-deploy-keys",
+    "readingTime": "2 minutes read"
+  }
+]

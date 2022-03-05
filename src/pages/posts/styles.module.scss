@@ -1,0 +1,29 @@
+.postContainer {
+  width: 90%;
+  margin: 2rem auto;
+
+  h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  code {
+    background-color: #000;
+    width: 100%;
+    display: block;
+    color: #07d404;
+    font-weight: 800;
+    padding: .5rem;
+    font-size: 1.1rem;
+  }
+
+  p {
+    img {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto;
+      max-width: 80%;
+    }
+  }
+}

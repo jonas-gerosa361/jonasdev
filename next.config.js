@@ -4,8 +4,12 @@ const nextConfig = {
 }
 
 module.exports = {
-  images: {
-    domains: ['dev.to'],
+   webpack: function(config) {
+    config.module.rules.push({
+      test: /\.md$/,
+      use: 'raw-loader',
+    })
+    return config
   },
   nextConfig
 }

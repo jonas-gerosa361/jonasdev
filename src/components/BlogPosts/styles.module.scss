@@ -7,17 +7,28 @@
   }
 
   @media (min-width: 720px) {
-    width: 50%;
+    width: 70%;
   }
 
   ul {
     list-style-type: none;
 
     li {
+      &.link {
+        cursor: pointer;
+      }
+
       .post {
         display: flex;
         flex-direction: column;
         align-items: center;
+        padding: 1rem;
+
+        &:hover {
+          filter: brightness(0.8);
+          border: 1px solid #bfc0c4;
+          border-radius: 1rem;
+        }
 
         > span {
           border-radius: 1rem;
