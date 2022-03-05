@@ -21,7 +21,7 @@ export default function BlogPosts() {
         posts.map((post: BlogPostsProps) => {
           return (
             <li className={styles.link} key={post.id}>
-              <Link href={post.url}>
+              <Link passHref href={post.url}>
                 <div className={styles.post}>
                   <h2>{post.title}</h2>
                   <span className={styles.tags}>

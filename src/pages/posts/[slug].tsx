@@ -9,7 +9,9 @@ export default function PostTemplate({content, data}) {
   return (
     <div className={styles.postContainer}>
       <h2>{frontmatter.title}</h2>
-      <ReactMarkdown children={content} />
+      <ReactMarkdown>
+        {content}
+      </ReactMarkdown>
     </div>
   )
 }

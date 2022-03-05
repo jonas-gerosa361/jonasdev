@@ -6,7 +6,7 @@ import styles from './styles.module.scss';
 export function Brand() {
   return (
     <div className={styles.BrandContainer}>
-      <Link href='/'>
+      <Link passHref href='/'>
         <h1>JonasDEV</h1>
       </Link>
       <SocialIcons />
