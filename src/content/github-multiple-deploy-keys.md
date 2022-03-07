@@ -19,7 +19,7 @@ total 40
 ```
 In the example above I have 2 different keys, one id_rsa, and another ceep_rsa. Each key is composed of a rsa file and a rsa_pub file.
 
-For creating or first "deploy key" we will use the id_rsa.pub file. Copy the content of the command:
+For creating our first "deploy key" we will use the id_rsa.pub file. Copy the content of the command:
 ```
 cat ~/.ssh/id_rsa.pub
 ```

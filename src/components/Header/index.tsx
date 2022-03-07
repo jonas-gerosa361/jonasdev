@@ -8,15 +8,16 @@ export function Header() {
       <div className={styles.headerContent}>
         <Brand />
         <nav>
-          <Link href='/'>
-            Home
+          <Link href='/' prefetch>
+            <a>
+              Home
+            </a>
           </Link>
-          <Link href='/posts'>
-            Posts
+          <Link href='/posts' prefetch>
+            <a>
+              Posts
+            </a>
           </Link>
-          {/* <Link href='/projects'>
-            Projects
-          </Link> */}
         </nav>
       </div>
     </header>
