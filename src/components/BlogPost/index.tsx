@@ -8,7 +8,8 @@ interface PostProps {
   field_posts_tags: string,
   nid: string,
   title: string,
-  field_readingtime: string
+  field_readingtime: string,
+  readingTime: string
 }
 
 export default function BlogPost() {
@@ -18,7 +19,8 @@ export default function BlogPost() {
     'field_posts_tags': '',
     'nid': '',
     'title': '',
-    'field_readingtime': ''
+    'field_readingtime': '',
+    'readingTime': ''
   }
   const [post, setPost] = useState<PostProps>(defaultPost);
   const context: any = useAppContext();
@@ -29,7 +31,8 @@ export default function BlogPost() {
       const objPost = await fetch(`https://cms.jonasdev.com.br/api/posts/get/${postNid}`)
         .then(response => response.json())
         .then(response => response[0]);
-      setPost(objPost);
+
+      setPost({...objPost, readingTime: `Reading time: ${objPost.field_readingtime}`});
     }
 
     setPostNid();
@@ -40,7 +43,7 @@ export default function BlogPost() {
       <div className={styles.postHeader}>
         <h2><strong>{post.title}</strong></h2>
         <p>{post.field_posts_tags}</p>
-        <p>{post.field_readingtime}</p>
+        <p>{post.readingTime}</p>
       </div>
       <div dangerouslySetInnerHTML={{__html: post.field_body}} ></div>
     </div>
