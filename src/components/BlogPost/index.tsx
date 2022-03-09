@@ -1,8 +1,6 @@
 import { useEffect, useState } from 'react';
 import { useAppContext } from '../../context/AppContext';
 import styles from './styles.module.scss';
-import NProgress from 'nprogress';
-
 
 interface PostProps {
   field_body: string,
@@ -29,14 +27,12 @@ export default function BlogPost() {
   const postNid = context.getPost();
 
   useEffect(() => {
-    NProgress.start();
     const setPostNid = async () => {
       const objPost = await fetch(`https://cms.jonasdev.com.br/api/posts/get/${postNid}`)
         .then(response => response.json())
         .then(response => response[0]);
 
       setPost({...objPost, readingTime: `Reading time: ${objPost.field_readingtime}`});
-      NProgress.done();
     }
 
     setPostNid();
