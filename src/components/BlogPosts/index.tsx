@@ -1,34 +1,44 @@
 import styles from './styles.module.scss';
-import data from "../../data/posts.json";
 import Link from 'next/link';
+import { useAppContext } from '../../context/AppContext';
 
-interface BlogPostsProps {
-  id: number,
+interface PostProps {
+  nid: string,
   title: string,
-  description: string,
-  readingTime: string,
-  tags: string,
-  url: string,
+  field_description: string,
+  field_readingtime: string,
+  field_posts_tags: string,
+  changed: string,
+  slug: string
 }
 
-export default function BlogPosts() {
-  const posts: BlogPostsProps[] = data;
+interface BlogPostsProps {
+  posts: PostProps[]
+}
+
+export default function BlogPosts({posts}: BlogPostsProps){
+  const context: any = useAppContext();
 
   return (
     <div className={styles.blogPostContainer}>
       <ul>
         {
-        posts.map((post: BlogPostsProps) => {
+        posts.map((post) => {
           return (
-            <li className={styles.link} key={post.id}>
-              <Link passHref href={post.url}>
+            <li
+              onClick={() => context.setPost(post.nid)}
+              className={styles.link}
+              key={post.nid}
+            >
+              <Link passHref href={`posts/${post.slug}`}>
                 <div className={styles.post}>
-                  <h2>{post.title}</h2>
+                  <span><strong>{post.changed}</strong></span>
+                  <h2 dangerouslySetInnerHTML={{__html: post.title}}></h2>
                   <span className={styles.tags}>
-                    tags: {post.tags}
+                    {post.field_posts_tags}
                   </span>
-                  <p>Description: {post.description}</p>
-                  <p>Reading time: {post.readingTime}</p>
+                  <p>Description: {post.field_description}</p>
+                  <p>Reading time: {post.field_readingtime}</p>
                 </div>
               </Link>
             </li>
@@ -38,4 +48,4 @@ export default function BlogPosts() {
       </ul>
     </div>
   );
-}
+};
