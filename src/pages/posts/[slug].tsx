@@ -22,7 +22,7 @@ export const getStaticProps: GetStaticProps = async({params}) => {
 
   const post = await axios(`https://cms.jonasdev.com.br/api/posts/get/${filteredSlug}`)
     .then(response => response.data[0])
-    .catch(error => {
+    .catch((error) => {
       console.log(error);
       return {
         'post': {
