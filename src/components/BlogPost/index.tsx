@@ -36,7 +36,7 @@ export default function BlogPost() {
     }
 
     setPostNid();
-  })
+  }, [])
 
   return (
     <div className={styles.postContainer}>
