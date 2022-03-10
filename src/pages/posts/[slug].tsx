@@ -1,11 +1,18 @@
 import axios from 'axios';
-import { GetStaticProps } from 'next';
+import { GetStaticPaths, GetStaticProps } from 'next';
 import BlogPost from '../../components/BlogPost';
 
 export default function PostTemplate({post}) {
   return (
     <BlogPost post={post} />
   )
+}
+
+export const getStaticPaths: GetStaticPaths = async() => {
+  return {
+    paths: [],
+    fallback: true
+  }
 }
 
 export const getStaticProps: GetStaticProps = async({params}) => {
