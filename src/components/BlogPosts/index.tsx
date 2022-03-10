@@ -1,6 +1,5 @@
 import styles from './styles.module.scss';
 import Link from 'next/link';
-import { useAppContext } from '../../context/AppContext';
 
 interface PostProps {
   nid: string,
@@ -17,8 +16,6 @@ interface BlogPostsProps {
 }
 
 export default function BlogPosts({posts}: BlogPostsProps){
-  const context: any = useAppContext();
-
   return (
     <div className={styles.blogPostContainer}>
       <ul>
@@ -26,7 +23,6 @@ export default function BlogPosts({posts}: BlogPostsProps){
         posts.map((post) => {
           return (
             <li
-              onClick={() => context.setPost(post.nid)}
               className={styles.link}
               key={post.nid}
             >

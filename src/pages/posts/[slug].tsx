@@ -1,5 +1,5 @@
 import axios from 'axios';
-import { GetStaticPaths, GetStaticProps } from 'next';
+import { GetServerSideProps } from 'next';
 import BlogPost from '../../components/BlogPost';
 
 export default function PostTemplate({post}) {
@@ -8,15 +8,7 @@ export default function PostTemplate({post}) {
   )
 }
 
-export const getStaticPaths: GetStaticPaths = async() => {
-  return {
-    paths: [],
-    fallback: true
-  }
-}
-
-
-export const getStaticProps: GetStaticProps = async({params}) => {
+export const getServerSideProps: GetServerSideProps = async({params}) => {
   const {slug} = params;
   const filteredSlug = slug.toString().replaceAll('-', ' ');
 
@@ -40,7 +32,6 @@ export const getStaticProps: GetStaticProps = async({params}) => {
   return {
     props: {
       post,
-    },
-    revalidate: 60 * 60 * 24 //24h
+    }
   }
 }

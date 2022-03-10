@@ -1,8 +1,7 @@
 import Head from "next/head";
-import {GetStaticProps} from 'next';
+import { GetServerSideProps } from 'next';
 import BlogPosts from "../components/BlogPosts";
 import slugify from "slugify";
-import { useAppContext } from "../context/AppContext";
 import axios from "axios";
 
 interface PostProps {
@@ -32,7 +31,7 @@ export default function Posts({posts}: PostsProps) {
   );
 }
 
-export const getStaticProps: GetStaticProps = async() => {
+export const getServerSideProps: GetServerSideProps = async() => {
   const posts = await axios('https://cms.jonasdev.com.br/api/posts')
     .then(response => response.data)
     .catch((error) => {
@@ -49,7 +48,6 @@ export const getStaticProps: GetStaticProps = async() => {
   return {
     props: {
       posts: filteredPosts
-    },
-    revalidate: 60 * 60 * 24 // 24 hours
+    }
   }
 }
