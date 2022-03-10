@@ -3,6 +3,7 @@ import {GetStaticProps} from 'next';
 import BlogPosts from "../components/BlogPosts";
 import slugify from "slugify";
 import { useAppContext } from "../context/AppContext";
+import axios from "axios";
 
 interface PostProps {
   nid: string,
@@ -32,9 +33,8 @@ export default function Posts({posts}: PostsProps) {
 }
 
 export const getStaticProps: GetStaticProps = async() => {
-  const posts = await fetch('https://cms.jonasdev.com.br/api/posts')
-    .then(response => response.json())
-    .then(response => response)
+  const posts = await axios('https://cms.jonasdev.com.br/api/posts')
+    .then(response => response.data)
     .catch((error) => {
       console.log(error);
       return {};
