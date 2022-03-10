@@ -1,5 +1,5 @@
 import axios from 'axios';
-import { GetServerSideProps } from 'next';
+import { GetStaticProps } from 'next';
 import BlogPost from '../../components/BlogPost';
 
 export default function PostTemplate({post}) {
@@ -8,7 +8,7 @@ export default function PostTemplate({post}) {
   )
 }
 
-export const getServerSideProps: GetServerSideProps = async({params}) => {
+export const getStaticProps: GetStaticProps = async({params}) => {
   const {slug} = params;
 
   const post = await axios(`https://cms.jonasdev.com.br/api/posts/get/${slug}`)

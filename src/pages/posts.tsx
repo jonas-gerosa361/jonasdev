@@ -1,5 +1,5 @@
 import Head from "next/head";
-import { GetServerSideProps } from 'next';
+import { GetStaticProps } from 'next';
 import BlogPosts from "../components/BlogPosts";
 import slugify from "slugify";
 import axios from "axios";
@@ -31,7 +31,7 @@ export default function Posts({posts}: PostsProps) {
   );
 }
 
-export const getServerSideProps: GetServerSideProps = async() => {
+export const getStaticProps: GetStaticProps = async() => {
   const posts = await axios('https://cms.jonasdev.com.br/api/posts')
     .then(response => response.data)
     .catch((error) => {
