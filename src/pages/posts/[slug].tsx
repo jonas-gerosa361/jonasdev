@@ -10,9 +10,8 @@ export default function PostTemplate({post}) {
 
 export const getServerSideProps: GetServerSideProps = async({params}) => {
   const {slug} = params;
-  const filteredSlug = slug.toString().replaceAll('-', ' ');
 
-  const post = await axios(`https://cms.jonasdev.com.br/api/posts/get/${filteredSlug}`)
+  const post = await axios(`https://cms.jonasdev.com.br/api/posts/get/${slug}`)
     .then(response => response.data[0])
     .catch((error) => {
       console.log(error);
