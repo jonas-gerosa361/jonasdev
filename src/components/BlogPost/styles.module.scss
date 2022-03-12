@@ -4,6 +4,8 @@
   margin-top: 1rem;
 
   img {
+    display: block;
+    margin: 0 auto;
     max-width: 100%;
   }
 
@@ -17,5 +19,12 @@
     pre {
       overflow: scroll;
     }
+  }
+
+  pre {
+    background-color: #000;
+    color: #0ee62e;
+    padding: .5rem;
+    font-size: 14px;
   }
 }

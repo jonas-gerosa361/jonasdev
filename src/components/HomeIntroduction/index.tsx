@@ -9,8 +9,8 @@ export default function HomeIntroduction() {
         <Image
           src="/images/me.jpeg"
           alt="White man whearing glasses and smiling"
-          width='150'
-          height='200'
+          width='430'
+          height='493'
         />
         <div className={styles.TextIntroduction}>
           <p>Hi! Welcome to my blog!👋 Here I&apos;ll be writing about my experience with web development.</p>

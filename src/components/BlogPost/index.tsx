@@ -15,11 +15,18 @@ interface PostProps {
 export default function BlogPost({post}: PostProps) {
   return (
     <div className={styles.postContainer}>
-      <div className={styles.postHeader}>
-        <h2><strong>{post?.title ?? ''}</strong></h2>
-        <p>{post?.field_posts_tags ?? ''}</p>
-        <p>{post?.readingTime ?? ''}</p>
-      </div>
+      <article className={styles.postHeader}>
+        {
+          typeof(post) !== undefined ?? (
+            <>
+              <h2><strong>{post.title ?? ''}</strong></h2>
+              <p>{post.field_posts_tags ?? ''}</p>
+              <p>{post.readingTime ?? ''}</p>
+            </>
+          )
+        }
+
+      </article>
       <div dangerouslySetInnerHTML={{__html: post?.field_body ?? ''}} ></div>
     </div>
   )

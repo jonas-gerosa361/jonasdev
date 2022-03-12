@@ -8,12 +8,12 @@ export function Header() {
       <div className={styles.headerContent}>
         <Brand />
         <nav>
-          <Link href='/' prefetch>
+          <Link href='/'>
             <a>
               Home
             </a>
           </Link>
-          <Link href='/posts' prefetch>
+          <Link href='/posts'>
             <a>
               Posts
             </a>

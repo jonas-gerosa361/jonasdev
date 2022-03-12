@@ -1,10 +1,30 @@
 import axios from 'axios';
 import { GetStaticPaths, GetStaticProps } from 'next';
+import Head from 'next/head';
 import BlogPost from '../../components/BlogPost';
 
-export default function PostTemplate({post}) {
+interface PostProps {
+  post: {
+    field_body: string,
+    field_description: string,
+    field_posts_tags: string,
+    nid: string,
+    title: string,
+    field_readingtime: string,
+    readingTime: string
+  }
+}
+
+export default function PostTemplate({post}: PostProps) {
   return (
-    <BlogPost post={post} />
+    <>
+      <Head>
+        {
+          <title>{post ? post.title : ''} | JonasDEV</title>
+        }
+      </Head>
+      <BlogPost post={post} />
+    </>
   )
 }
 
