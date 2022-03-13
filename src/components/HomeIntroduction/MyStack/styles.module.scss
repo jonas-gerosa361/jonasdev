@@ -16,16 +16,20 @@
     justify-content: space-evenly;
     flex-wrap: wrap;
     margin: 1rem 0;
+    justify-content: center;
 
     div {
+      margin: .5rem 2rem;
       display: flex;
       flex-direction: column;
       justify-content: center;
 
-      img {
-        &:hover {
-          filter: brightness(0.8);
-        }
+      span {
+        margin-top: .5rem;
+      }
+
+      &:hover {
+        filter: brightness(0.8);
       }
     }
   }

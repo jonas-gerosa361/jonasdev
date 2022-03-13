@@ -20,7 +20,8 @@
     "scss": "^0.2.4",
     "sitemap": "^7.1.1",
     "slugify": "^1.6.5",
-    "typescript": "^4.5.5"
+    "typescript": "^4.5.5",
+    "uniqid": "^5.4.0"
   },
   "devDependencies": {
     "eslint": "8.10.0",
