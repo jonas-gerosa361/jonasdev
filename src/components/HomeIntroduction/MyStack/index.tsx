@@ -91,7 +91,6 @@ export function MyStack() {
             src="/images/badges/react.png"
             width="60"
             height="60"
-            layout='responsive'
             alt="React"
           />
           <span>React</span>
@@ -103,7 +102,6 @@ export function MyStack() {
             src="/images/badges/node.png"
             width="60"
             height="60"
-            layout='responsive'
             alt="Node"
           />
           <span>Node</span>
@@ -115,7 +113,6 @@ export function MyStack() {
             src="/images/badges/php.png"
             width="60"
             height="60"
-            layout='responsive'
             alt="PHP"
           />
           <span>PHP</span>
@@ -127,7 +124,6 @@ export function MyStack() {
             src="/images/badges/drupal.png"
             width="60"
             height="60"
-            layout='responsive'
             alt="Drupal"
           />
           <span>Drupal</span>
@@ -135,6 +131,7 @@ export function MyStack() {
 
         <div>
           <Image
+            key={uniqid()}
             src="/images/badges/laravel.png"
             width="60"
             height="60"
@@ -149,7 +146,6 @@ export function MyStack() {
             src="/images/badges/linux.png"
             width="60"
             height="60"
-            layout='responsive'
             alt="Linux"
           />
           <span>Linux</span>
@@ -172,7 +168,6 @@ export function MyStack() {
             src="/images/badges/nginx.png"
             width="60"
             height="60"
-            layout='responsive'
             alt="Nginx"
           />
           <span>Nginx</span>
@@ -184,7 +179,6 @@ export function MyStack() {
             src="/images/badges/apache.png"
             width="60"
             height="60"
-            layout='responsive'
             alt="Apache"
           />
           <span>Apache</span>
@@ -196,7 +190,6 @@ export function MyStack() {
             src="/images/badges/mysql.png"
             width="60"
             height="60"
-            layout='responsive'
             alt="MySQL"
           />
           <span>MySQL</span>
@@ -215,6 +208,7 @@ export function MyStack() {
 
         <div>
           <Image
+            key={uniqid()}
             src="/images/badges/mongo.png"
             width="60"
             height="60"
@@ -225,6 +219,7 @@ export function MyStack() {
 
         <div>
           <Image
+            key={uniqid()}
             src="/images/badges/redis.png"
             width="60"
             height="60"
