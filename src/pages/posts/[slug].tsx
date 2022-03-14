@@ -20,7 +20,12 @@ export default function PostTemplate({post}: PostProps) {
     <>
       <Head>
         {
-          <title>{post ? post.title : ''} | JonasDEV</title>
+          <>
+            <meta name='description' content={
+              post ? post.field_description : ''
+            } />
+            <title>{post ? post.title : ''} | JonasDEV</title>
+          </>
         }
       </Head>
       <BlogPost post={post} />

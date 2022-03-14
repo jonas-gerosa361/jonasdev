@@ -24,6 +24,7 @@ export default function Posts({posts}: PostsProps) {
     <>
       <Head>
         <title>Posts | JonasDEV</title>
+        <meta name="description" content="List of all my posts talking about either PHP, Drupal, React or web development in general." />
       </Head>
 
       <BlogPosts posts={posts} />
