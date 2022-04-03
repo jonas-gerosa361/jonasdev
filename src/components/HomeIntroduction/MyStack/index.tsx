@@ -6,7 +6,7 @@ import styles from './styles.module.scss';
 export function MyStack() {
   return (
     <div className={styles.myStackContainer}>
-      <h2>Technologies that I&apos;m confortable working with</h2>
+      <h2>Technologies that I&apos;m comfortable working with</h2>
       <div className={styles.badges}>
         <div>
           <Image
